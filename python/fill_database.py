@@ -13,7 +13,7 @@ def fill_database(quantity):
     Args:
         quantity (int): The quantity of registers to insert in database
     """
-    for i in range(0, total):
+    for i in range(0, quantity):
         url = "http://localhost:4130/v1/client"
         headers = {
             "Content-Type": "application/json"
