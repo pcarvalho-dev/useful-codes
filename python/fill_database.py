@@ -19,14 +19,12 @@ def fill_database(quantity):
             "Content-Type": "application/json"
         }
         payload = {
-            "life_style": faker.text(),
             "birth_date": faker.date(),
             "status": True,
             "genre": random.choice(["male", "female"]),
             "password": "123456",
             "taxpayer": faker.random_number(digits=10),
             "cell_phone": faker.phone_number(),
-            "interests": random.choice(["male", "female"]),
             "sexual_orientation": random.choice(["male", "female"]),
             "email": faker.email(),
             "bio": faker.text(),
